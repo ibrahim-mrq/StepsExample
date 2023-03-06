@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 holder as ItemStepDoneBinding
                 holder.title.text = model.step.title
+                holder.time.text = model.step.time
                 if (position == adapter.getData().size - 1) {
                     holder.view.visibility = View.GONE
                 } else {
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                 Step(
                     "Step 1",
                     "Body Step 1",
+                    "March 6, 2023",
                     "https://www.advotics.com/wp-content/uploads/2022/02/surat-jalan-01-1-4.png",
                     true
                 ),
@@ -92,6 +94,7 @@ class MainActivity : AppCompatActivity() {
                 Step(
                     "Step 2",
                     "Body Step 2",
+                    "March 4, 2023",
                     "https://www.advotics.com/wp-content/uploads/2022/02/surat-jalan-01-1-4.png",
                     true
                 ),
@@ -103,6 +106,7 @@ class MainActivity : AppCompatActivity() {
                 Step(
                     "Step 3",
                     "Body Step 3",
+                    "March 2, 2023",
                     "https://bpcdn.co/images/2016/05/pre-school-order.png",
                     true
                 ),
@@ -114,6 +118,7 @@ class MainActivity : AppCompatActivity() {
                 Step(
                     "Step 4",
                     "Body Step 4",
+                    "March 10, 2023",
                     "https://browntape.com/wp-content/uploads/2017/09/aa.png",
                     false
                 ),
@@ -125,6 +130,7 @@ class MainActivity : AppCompatActivity() {
                 Step(
                     "Step 5",
                     "Body Step 5",
+                    "March 16, 2023",
                     "https://i0.wp.com/marketbusinessnews.com/wp-content/uploads/2019/04/Made-to-order-thumbnail-image-23222.jpg?fit=695%2C439&ssl=1",
                     false
                 ),

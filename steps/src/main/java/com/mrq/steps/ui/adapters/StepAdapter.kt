@@ -13,7 +13,7 @@ abstract class StepAdapter<T>(
     private val context: Context,
     private var layoutResStep: Int,
     private var layoutResStepDone: Int,
-    var currentStep: Int = 0,
+    var currentStep: Int = -1,
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val TYPE_STEP = 1
@@ -60,7 +60,6 @@ abstract class StepAdapter<T>(
                 )
                 StepDoneViewHolder(binding)
             }
-
         }
     }
 
